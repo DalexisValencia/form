@@ -1,0 +1,80 @@
+html {
+    margin: 0px !important;
+    padding: 0px !important;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    background-color: #ffd100;
+}
+html, * {
+    box-sizing: border-box;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.custom--container{
+    overflow: hidden;
+    max-width: 660px;
+    margin: 0 auto;
+}
+.block-banner{
+    background: url(images/fondo-mikes.png) no-repeat center #ffd100;
+    background-size: cover;
+    position: relative;
+}
+.custom--fixed-image{
+    text-align: center;
+    position: absolute;
+    right: 10%;
+    bottom: 50px;
+}
+.custom--text__center{
+    text-align: center;
+}
+/*v-row*/
+.custom--row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem 0;
+}
+@media (min-width: 1200px){
+    .custom--container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 992px) {
+    .custom--container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .custom--container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .custom--container {
+        max-width: 540px;
+    }
+}
+/*v-col*/
+.custom--col{
+    width: 49.8%;
+}
+.custom--col__full{
+    width: 100%;
+    padding: 0x 12px;
+}
+@media (max-width: 1022px){
+    .custom--col{
+        width: 100%;
+    }
+    .custom--fixed-image{
+        position: inherit;
+        right: 0px;
+        bottom: 0px;
+    }   
+}

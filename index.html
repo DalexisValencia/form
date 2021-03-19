@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <main class="block-banner">
+        <div class="custom--container">
+            <section class="custom--logo">
+                <img src="images/limones-data.png" alt="tu tranqui, No venderemos tus datos" title="tu tranqui, no venderemos tus datos" class="logo-desktop">
+                <img src="images/limones-data-mobile.png" alt="tu tranqui, No venderemos tus datos" title="tu tranqui, no venderemos tus datos" class="logo-mobile">
+            </section>
+            <section class="">
+                <form class="custom--row">
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <input placeholder="NOMBRE" td-type="firstname" autocomplete="off" data-drupal-selector="edit-name" type="text" id="edit-name" name="name" value="" size="60" maxlength="100" class="custom--input" required="required">
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <input placeholder="APELLIDO" td-type="lastname" autocomplete="off" data-drupal-selector="edit-lastname" type="text" id="edit-lastname" name="lastname" value="" size="60" maxlength="100" class="custom--input" required="required" aria-required="true">
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <input placeholder="CORREO" td-type="email" autocomplete="off" data-drupal-selector="edit-email" type="email" id="edit-email" name="email" value="" size="60" maxlength="50" required="required" class="custom--input" aria-required="true">
+                        </fieldset>
+                    </div>
+                    
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <input placeholder="CELULAR" min="1" step="1" td-type="cellphone" autocomplete="off" data-drupal-selector="edit-phone" type="number" id="edit-phone" name="phone" value="" required="required" class="custom--input" aria-required="true">
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <input placeholder="D.N.I" data-disable-refocus="1" td-type="dni" autocomplete="off" data-drupal-selector="edit-document" type="number" id="edit-document" name="document" value="" step="1" class="custom--input" required="required" aria-required="true">
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset">
+                            <select td-type="gender" autocomplete="off" data-drupal-selector="edit-gender" id="edit-gender" name="gender" class="custom--input__select" required="required">
+                                <option value="" selected="selected">Género</option>
+                                <option value="F">Femenino</option>
+                                <option value="M">Masculino</option>
+                            </select>
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col">
+                        <fieldset class="custom--form__fieldset with-label">
+                            <label for="edit-birthday" class="custom--input__label">Fecha de Nacimiento <span class="is-required">*</span></label>
+                            <input placeholder="DÍA/MES/AÑO" td-type="dateofbirth" autocomplete="off" data-drupal-selector="edit-birthday" type="text" id="edit-birthday" name="birthday" value="" size="60" maxlength="10" class="custom--input" required="required" aria-required="true">
+                        </fieldset>
+                    </div>
+
+                    <div class="custom--col__full custom--text__center">
+                        <label class="custom--input__checkout">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="like-label">
+                                Acepto
+                                <a href="https://www.backus.pe/sites/g/files/yrakuj241/files/2020-08/TERMINOS%20Y%20CONDICIONES%20GENERALES%20-%20PA%CC%81GINAS%20Y%20APLICACIONES%20%28PERU%29.pdf" target="_blank">términos y condiciones</a> y <a href="https://www.backus.pe/sites/g/files/yrakuj241/files/2020-08/POLII%CC%81TICA%20DE%20PRIVACIDAD%20Y%20PROTECCIO%CC%81N%20DE%20DATOS%20PERSONALES%20PERU%CC%81%202020_1.pdf" target="_blank">
+                                    políticas de privacidad
+                                </a> <span class="required">*</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="custom--col__full custom--text__center">
+                        <label class="custom--input__checkout">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="like-label">
+                                Deseo recibir información comercial y eventos de Backus y sus marcas asociadas
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="custom--col__full custom--text__center">
+                        <button type="submit" id="submit" name="op" value="ENVIAR" class="custom--input__button">
+                            ENVIAR
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <section class="custom--fixed-image">
+            <img src="images/packshot.png" alt="packshot" title="packshot" class="m--5">
+        </section>
+
+        <footer class="custom--footer">
+            PHOHÍBASE EL EXPENDIO DE BEBIDAS EMBRIAGANTES A MENORES DE EDAD, EL EXCESO DE ALCOHOL ES PERJUDICIAL PARA LA SALUD
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.custom--logo{
+    text-align: center;
+}
+.custom--logo img {
+    max-width: 100%;
+}
+
+.logo-mobile{
+    display: none;
+}
+
+@media (min-width: 0px) and (max-width: 992px){
+    .logo-mobile {
+        display: inline-block;
+    }
+    .logo-desktop{
+        display: none !important;
+    }
+}
+@media (max-width: 320px){
+    .logo-mobile {
+        display: block;
+        width: 100%;
+    }
+}

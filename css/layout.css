@@ -18,7 +18,7 @@ body {
     margin: 0 auto;
 }
 .block-banner{
-    background: url(images/fondo-mikes.png) no-repeat center #ffd100;
+    background: url(../images/fondo-mikes.png) no-repeat center #ffd100;
     background-size: cover;
     position: relative;
 }
